@@ -13,7 +13,7 @@
 
 // Incomplete type used to hide the
 // internal stack representation
-typedef struct StackType *Stack;
+typedef struct stack_type *Stack;
 
 // Allocate and release memory
 Stack stack_create(void);

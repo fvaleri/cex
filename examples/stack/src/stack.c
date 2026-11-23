@@ -8,7 +8,7 @@
 #include "stack.h"
 
 // Implemented as a linked list
-struct StackType {
+struct stack_type {
     int count;
     struct node {
         void *data;
@@ -22,7 +22,7 @@ static void terminate(const char *message) {
 }
 
 Stack stack_create(void) {
-    Stack s = malloc(sizeof(struct StackType));
+    Stack s = malloc(sizeof(struct stack_type));
     if (s == NULL)
         terminate("Error in create: stack could not be created.");
     s->count = 0;
